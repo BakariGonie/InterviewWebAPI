@@ -25,7 +25,7 @@ namespace InterviewWebAPI.Services
             try
             {
 
-                var insertQuery = string.Format("INSERT INTO `patient`(`FirstName`, `LastName`, `DOB`) VALUES ('{0}','{1}','{2}')",param.FirstName, param.LastName, param.DOB);
+                var insertQuery = string.Format("INSERT INTO `patient`(`FirstName`, `LastName`, `DOB`, `Gender') VALUES ('{0}','{1}','{2}', '{3})",param.FirstName, param.LastName, param.DOB, param.Gender);
 
 
                 //create command object to pass the connection and other information
